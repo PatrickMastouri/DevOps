@@ -11,6 +11,5 @@ public interface EntrepriseService {
 	Entreprise addEntreprise(Entreprise a);
 	void deleteEntreprise(long id);
 	Entreprise updateEntreprise(Entreprise a);
-	Optional<Entreprise> retrieveEntreprise(long id);
 
 }

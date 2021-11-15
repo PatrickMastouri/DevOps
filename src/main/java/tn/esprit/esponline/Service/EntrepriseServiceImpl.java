@@ -82,32 +82,20 @@ public class EntrepriseServiceImpl implements EntrepriseService {
 
 				return e_saved; 
 	}
-
+	
+	/*
 	@Override
-	public Optional<Entreprise> retrieveEntreprise(long id) {
-
-		
-		// TODO Log à ajouter en début de la méthode 
+	public Entreprise retrieveEntreprise(long id) {
 		L.info("In methode retrieventre");
 		
-
-				//User u =  userRepository.findById(Long.parseLong(id)).orElse(null);
-			Optional <Entreprise> a =  entrepriseRepository.findById(id); 
-		
-	
-			a.ifPresent(existingCustomer -> {
-			    String nameWeWanted = existingCustomer.getName();
-			    //operate on existingCustomer
-			});
-        
-        	 L.error("error in retrieventr() : " + a);
-        
-		// TODO Log à ajouter à la fin de la méthode 
-		
+		Entreprise e =  entrepriseRepository.findById(id).orElse(new Entreprise());
+		//Entreprise u =  entrepriseRepository.findById((id)).get(); 
 		L.info("out methode retrieveEntr");
-		
-		return a;
-				
+		return e; 
 	}
+*/
+
+		
+
 
 }

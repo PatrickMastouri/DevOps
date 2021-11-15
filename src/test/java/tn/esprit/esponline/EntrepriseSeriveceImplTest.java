@@ -24,16 +24,16 @@ public class EntrepriseSeriveceImplTest {
 	@Order(1)
 	public void testRetrieveAllEntreprise() {
 		List<Entreprise> ListeEntreprise = entrepriseService.retrieveAllEntreprise();
-		Assertions.assertEquals(2, ListeEntreprise.size());;
+		Assertions.assertEquals(15, ListeEntreprise.size());;
 		
 	}
 	
-	/*
+	
 	
 	@Test
 	@Order(2)
 	public void testaddEntreprise() throws ParseException{
-		Entreprise e = new Entreprise("tets","rafik");
+		Entreprise e = new Entreprise("tetsup","rafikup");
 		Entreprise entrepriseAdded = entrepriseService.addEntreprise(e);
 		Assertions.assertEquals(e.getName(),entrepriseAdded.getName());
 	
@@ -43,7 +43,7 @@ public class EntrepriseSeriveceImplTest {
 	@Test
 	@Order(3)
 	public void testUpdateEntreprise() throws ParseException{
-		Entreprise e = new Entreprise(11,"rafik","mastour66i");
+		Entreprise e = new Entreprise(19,"rafik","mastour66i");
 		Entreprise entrUpdated = entrepriseService.updateEntreprise(e);
 		Assertions.assertEquals(e.getName(),entrUpdated.getName());
 
@@ -53,19 +53,13 @@ public class EntrepriseSeriveceImplTest {
 	@Test
 	@Order(4)
 	public void testDeleteEntreprise(){
-		entrepriseService.deleteEntreprise(11);
-		Assertions.assertNull(entrepriseService.retrieveEntreprise(11));
+		entrepriseService.deleteEntreprise(34);
+		
 		
 	}
-	
-	@Test
-	@Order(5)
-	public void testRetrieveEntreprise(){
-		Optional<Entreprise> entrepriseRetrieved = entrepriseService.retrieveEntreprise(1);
-		Assertions.assertEquals(1, entrepriseRetrieved);
-		
-	}
-	*/ 
+}
 	
 
-}
+	
+
+
