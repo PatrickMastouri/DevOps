@@ -43,7 +43,7 @@ public class EntrepriseSeriveceImplTest {
 	@Test
 	@Order(3)
 	public void testUpdateEntreprise() throws ParseException{
-		Entreprise e = new Entreprise(19,"rafik","mastour777777i");
+		Entreprise e = new Entreprise(19,"rafik","test123");
 		Entreprise entrUpdated = entrepriseService.updateEntreprise(e);
 		Assertions.assertEquals(e.getName(),entrUpdated.getName());
 
@@ -53,7 +53,7 @@ public class EntrepriseSeriveceImplTest {
 	@Test
 	@Order(4)
 	public void testDeleteEntreprise(){
-		entrepriseService.deleteEntreprise(51);
+		entrepriseService.deleteEntreprise(52);
 		
 		
 	}
