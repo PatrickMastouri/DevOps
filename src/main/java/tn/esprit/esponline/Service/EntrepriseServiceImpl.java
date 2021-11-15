@@ -83,6 +83,30 @@ public class EntrepriseServiceImpl implements EntrepriseService {
 				return e_saved; 
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	@Override
 	public Entreprise retrieveEntreprise(long id) {
