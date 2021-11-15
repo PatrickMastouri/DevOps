@@ -24,7 +24,7 @@ public class EntrepriseSeriveceImplTest {
 	@Order(1)
 	public void testRetrieveAllEntreprise() {
 		List<Entreprise> ListeEntreprise = entrepriseService.retrieveAllEntreprise();
-		Assertions.assertEquals(15, ListeEntreprise.size());;
+		Assertions.assertEquals(3, ListeEntreprise.size());;
 		
 	}
 	
@@ -43,7 +43,7 @@ public class EntrepriseSeriveceImplTest {
 	@Test
 	@Order(3)
 	public void testUpdateEntreprise() throws ParseException{
-		Entreprise e = new Entreprise(19,"rafik","mastour66i");
+		Entreprise e = new Entreprise(19,"rafik","mastour777777i");
 		Entreprise entrUpdated = entrepriseService.updateEntreprise(e);
 		Assertions.assertEquals(e.getName(),entrUpdated.getName());
 
@@ -53,7 +53,7 @@ public class EntrepriseSeriveceImplTest {
 	@Test
 	@Order(4)
 	public void testDeleteEntreprise(){
-		entrepriseService.deleteEntreprise(34);
+		entrepriseService.deleteEntreprise(17);
 		
 		
 	}
